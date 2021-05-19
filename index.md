@@ -1,11 +1,11 @@
 # Jellycuts Documentation
 
 ## Meta Actions
-[Variables](docs/Variables%20in%20Jelly.md)
+[Variables](docs/VariablesInJelly.md)
 
-[Magic Variables](docs/Magic%20Variables%20in%20Jelly.md)
+[Magic Variables](docs/MagicVariablesinJelly.md)
 
-[Functions](docs/Do%20Stuff!.md)
+[Functions](docs/DoStuff!!.md)
 
 [Importing Libraries](docs/libraries.md)
 
