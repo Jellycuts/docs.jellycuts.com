@@ -1,1 +1,4 @@
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
+title: Jellycuts Documentation
+description: The Jellycuts iOS app documentation.
+show_downloads: false
