@@ -130,6 +130,25 @@
         <p>The Jelly programming language was created to code <a href='https://apps.apple.com/us/app/shortcuts/id915249334'>Siri Shortcuts</a> in a text base language. This is why the language is currently structured around calling functions. </p>
         <h3 id='the-shortcuts-library'>The Shortcuts Library</h3>
         <p>The standard Jelly library is the Shortcuts Library. This library contains functions that are easily translated directly into default Shortcuts actions. Documentation for this library can be found on the <a href='./Shortcuts_Standard/index.html'>Shortcuts Standard Page.</a></p>
+        <h2 id='march-2026-language-ide-milestone'>March 2026 Language + IDE Milestone (March 14, 2026)</h2>
+        <p>The March 14, 2026 milestone focused on language ergonomics, diagnostics quality, and editor stability for large files.</p>
+        <h3>Language Highlights</h3>
+        <ul>
+            <li>Expression assignment resolution now supports list literals, function calls, binary math, and index lookups.</li>
+            <li>Return statements now resolve expression right-hand sides in addition to plain variable names.</li>
+            <li>Typed function parameter declarations (for example <code>func test(value: str)</code>) bind the parameter identifier correctly.</li>
+            <li>Generated magic variable names now use a compact <code>GMV-</code> prefix.</li>
+            <li>Diagnostics now include <code>columnNumber</code> for richer source pinpointing.</li>
+            <li>False deprecation warnings for spaces in variable names were reduced by stricter identifier checks.</li>
+        </ul>
+        <h3>IDE Highlights</h3>
+        <ul>
+            <li><strong>Wrap Text While Coding</strong> behavior was stabilized and wrap preference is preserved when reopening projects.</li>
+            <li>Wrap-off mode now reliably keeps horizontal scrolling behavior for long lines.</li>
+            <li>Caret visibility in wrapped text was improved so typing position stays reachable.</li>
+            <li>Highlighting cadence was tuned for better responsiveness in long, base64-heavy files.</li>
+            <li>Console diagnostics now include clearer line markers, variable emphasis, and tap-to-jump navigation to source.</li>
+        </ul>
     </div>
 
 </body>

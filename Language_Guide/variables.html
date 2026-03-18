@@ -239,6 +239,13 @@ x += &quot;Hello World!&quot;
 // or
 var x += &quot;Hello World!&quot;</code></pre>
         <p>This will turn the variable into an array, just like the shortcuts add to variable action.</p>
+        <h2 id='expression-assignments'>Expression Assignments</h2>
+        <p>Variable assignments also support expression right-hand sides. This includes list literals, function calls, binary math, and index lookups.</p>
+        <pre><code>var adjectives = [&quot;Quick&quot;, &quot;Happy&quot;, &quot;Bright&quot;]
+var randomIndex = randomInteger(min: 0, max: lengthOfList(adjectives) - 1)
+var selected = adjectives[randomIndex]
+var emphasis = randomIndex + 2</code></pre>
+        <p>These expression forms now resolve without being misclassified as deprecated variable names.</p>
     </div>
 
 </body>

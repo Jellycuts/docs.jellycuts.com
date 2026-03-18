@@ -187,6 +187,22 @@ test()</code></pre>
         <pre><code>// This is not valid
 test()
 func test() { }</code></pre>
+        <h3 data-heading="Typed Parameters">Typed Parameters</h3>
+        <p>Functions and macros can use typed parameter hints in the form <code>name: type</code>. Supported hints include <code>str</code>, <code>int</code>, <code>bool</code>, <code>list</code>, <code>dict</code>, <code>date</code>, and <code>any</code>.</p>
+        <pre><code>func echo(value: str) {
+    return value
+}
+
+var output = echo(value: &quot;Hello&quot;)</code></pre>
+        <h3 data-heading="Returning Expressions">Returning Expressions</h3>
+        <p>Return statements now resolve expression right-hand sides directly, including math, function calls, list literals, and list indexing.</p>
+        <pre><code>func add40(input: int) {
+    return input + 40
+}
+
+func pickItem(items: list, index: int) {
+    return items[index]
+}</code></pre>
         <h2 data-heading="Functions">Functions</h2>
         <p>In the following code, we create a function called <code>lookAt</code> which takes the parameter input. Inside the function, you are able to use the input parameter as a mutable variable, however it will not mutate the variable you pass when the function as called. This is because on a function call, the parameter values are copied, not referenced.</p>
         <pre><code>// Function in Jelly
