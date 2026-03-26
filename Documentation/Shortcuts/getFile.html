@@ -1054,11 +1054,11 @@
 <p>Retrieves the file at a given path. It can also open a document picker if there is no path provided and the picker parameter is set to true.</p>
 <h2 id="syntax">Syntax</h2>
 <pre>
-<code>getFile(picker: <#Boolean#>, path: <#String (Allows Variables)#>, error: <#Boolean#>, multiple: <#Boolean#>)</code>
+<code>getFile(picker: &lt;#Boolean (Optional)#&gt;, path: &lt;#String (Allows Variables) (Optional)#&gt;, error: &lt;#Boolean (Optional)#&gt;, multiple: &lt;#Boolean (Optional)#&gt;)</code>
 </pre>
 <h2 id="example">Example</h2>
 <pre>
-<code>getFile(picker: false, path: "JellycutsHelper/meta.json", error: false, multiple: false)</code>
+<code>getFile(picker: true, path: "", error: false, multiple: false)</code>
 </pre>
     </div>
 

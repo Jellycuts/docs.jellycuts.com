@@ -1054,11 +1054,11 @@
 <p>Saves a file to a certain path. Can also show a save prompt if ask is true.</p>
 <h2 id="syntax">Syntax</h2>
 <pre>
-<code>saveFile(input: <#Variable#>, ask: <#Boolean#>, path: <#String (Allows Variables)#>, overwrite: <#Boolean#>)</code>
+<code>saveFile(input: &lt;#Variable (Optional)#&gt;, ask: &lt;#Boolean (Optional)#&gt;, path: &lt;#String (Allows Variables) (Optional)#&gt;, overwrite: &lt;#Boolean (Optional)#&gt;)</code>
 </pre>
 <h2 id="example">Example</h2>
 <pre>
-<code>saveFile(input: ShortcutInput, ask: false, path: "JellycutsHelper/.txt", overwrite: true)</code>
+<code>saveFile(input: ShortcutInput, ask: false, path: "JellycutsHelper/${ShortcutInput}.txt", overwrite: true)</code>
 </pre>
     </div>
 

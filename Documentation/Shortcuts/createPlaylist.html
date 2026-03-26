@@ -1054,11 +1054,11 @@
 <p>Creates a playlist with the given music, name, author and description.</p>
 <h2 id="syntax">Syntax</h2>
 <pre>
-<code>createPlaylist(name: <#String (Allows Variables)#>, music: <#Variable#>, author: <#String (Allows Variables)#>, description: <#String (Allows Variables)#>)</code>
+<code>createPlaylist(name: &lt;#String (Allows Variables)#&gt;, music: &lt;#Variable (Optional)#&gt;, author: &lt;#String (Allows Variables) (Optional)#&gt;, description: &lt;#String (Allows Variables) (Optional)#&gt;)</code>
 </pre>
 <h2 id="example">Example</h2>
 <pre>
-<code>createPlaylist(name: "'s favorite songs from 2021")</code>
+<code>createPlaylist(name: "${Name}'s Playlist", music: New Music, author: "${Name}", description: "${Name}'s favorite songs from 2021")</code>
 </pre>
     </div>
 

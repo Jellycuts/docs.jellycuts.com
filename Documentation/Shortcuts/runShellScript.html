@@ -1054,11 +1054,11 @@
 <p>Runs the given shell script</p>
 <h2 id="syntax">Syntax</h2>
 <pre>
-<code>runShellScript(input: <#Variable#>, script: <#String (Allows Variables)#>, shell: <#Enumeration (Shell)#>, inputMode: <#Enumeration (InputMode)#>)</code>
+<code>runShellScript(input: &lt;#Variable (Optional)#&gt;, script: &lt;#String (Allows Variables)#&gt;, shell: &lt;#Enumeration (Shell) (Optional)#&gt;, inputMode: &lt;#Enumeration (InputMode) (Optional)#&gt;)</code>
 </pre>
 <h2 id="example">Example</h2>
 <pre>
-<code>runShellScript(input: ShortcutInput, script: "echo "Hello World"", shell: /bin/zsh, inputMode: as arguments)</code>
+<code>runShellScript(input: ShortcutInput, script: "echo \", shell: , inputMode: /bin/zsh)</code>
 </pre>
     </div>
 
